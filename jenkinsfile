@@ -1,0 +1,14 @@
+pipeline {
+    agent any   
+    stages {
+        stage('whoami') {
+            steps {
+                @Library("Jenkinsfile-Shared-DevOps") _
+                // instantiate
+                def pr = new Printing()
+                // print
+                pr.MyAwesomePrintingFun()
+            }
+        }
+    }
+}
