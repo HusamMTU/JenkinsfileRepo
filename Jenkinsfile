@@ -6,8 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                Printing()
-//		  echo 'Hello World'
+                Printing('Husam')
             }
         }
     }
