@@ -1,13 +1,13 @@
 pipeline {
     agent any
-//    libraries {
-//  lib('Jenkinsfile-Shared-DevOps@master')
-//}
+    libraries {
+  lib('Jenkinsfile-Shared-DevOps@master')
+}
     stages {
         stage('build') {
             steps {
-//                Printing()
-		  echo 'Hello World'
+                Printing()
+//		  echo 'Hello World'
             }
         }
     }
