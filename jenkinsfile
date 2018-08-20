@@ -3,11 +3,12 @@ pipeline {
     stages {
         stage('whoami') {
             steps {
-                @Library("Jenkinsfile-Shared-DevOps") _
+               // @Library("Jenkinsfile-Shared-DevOps") _
                 // instantiate
-                def pr = new Printing()
+               // def pr = new Printing()
                 // print
-                pr.MyAwesomePrintingFun()
+               // pr.MyAwesomePrintingFun()
+               echo "Hello World"
             }
         }
     }
