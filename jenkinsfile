@@ -1,14 +1,9 @@
 pipeline {
-    agent any   
+    agent any
     stages {
-        stage('whoami') {
+        stage('build') {
             steps {
-               // @Library("Jenkinsfile-Shared-DevOps") _
-                // instantiate
-               // def pr = new Printing()
-                // print
-               // pr.MyAwesomePrintingFun()
-               echo "Hello World"
+                sh 'mvn --version'
             }
         }
     }
