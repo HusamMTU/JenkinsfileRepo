@@ -1,6 +1,7 @@
 pipeline {
-   // agent {label 'master'}
-    agent {label 'NGA01'}
+   agent any
+   //agent {label 'master'}
+   // agent {label 'NGA01'}
     libraries {
   lib('Jenkinsfile-Shared-DevOps@master')
 }
