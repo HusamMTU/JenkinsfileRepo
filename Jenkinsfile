@@ -1,5 +1,5 @@
 pipeline {
-    //agent any
+    agent any
    //agent {label 'master'}
    // agent {label 'NGA01'}
     libraries {
